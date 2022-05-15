@@ -1,5 +1,5 @@
 // オプションを指定してSkipperの実行
-$(".theTarget").skipper({
+$(".theTarget").skippr({
   // スライドショーの変化（"fade" or "slide")
   transition : 'slide',
   // 変化にかかる時間（ミリ）
@@ -20,4 +20,13 @@ $(".theTarget").skipper({
   keyboardOnAlways : true,
   // 1枚目のスライド表示時に戻る矢印を表示するかどうか[false]:矢印を隠さない[true]:矢印を隠す
   hidePrevious : false
+});
+
+$(function(){
+  $('#back a').on('click',function(event){
+    $('body,html').animate({
+      scrollTop:0
+    },800);
+    event.preventDefault();
+  });
 });

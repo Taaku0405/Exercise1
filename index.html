@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>練習用</title>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/skippr.css"/>
   </head>
   
   <body>
+  <main>
     <div class="header">
       <div class="header-logo">Well Come</div>
       <div class="header-list">
@@ -21,17 +23,15 @@
       </div>
     </div>
 
-    <div class="main">
       <div class="copy-container">
         <h1>練習制作①</h1>
         <h2>HTMLとCSSを使ってみた</h2>
         <h3>JavaScriptを使ってスライドショーを作成</h3>
       </div>
-    </div>
 
       <h4 class="section-title">【スライドショー】</h4>
       <div class="container">
-        <div class="the Target">
+        <div class="theTarget">
           <div style="background-image: url(img/code.png)"></div>
           <div style="background-image: url(img/talk.jpg)"></div>
           <div style="background-image: url(img/webcamp-mother.png)"></div>
@@ -40,8 +40,17 @@
           <div style="background-image: url(img/write.jpg)"></div>
         </div>
       </div>
+
+      <span id="back">
+        <a href="#">
+          <img src="img/arrow.png" alt="">
+        </a>
+      </span>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/skippr.min.js"></script>
     <script src="js/script.js"></script>
+    </main>
+
   </body>
 </html>
